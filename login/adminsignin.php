@@ -12,7 +12,7 @@
       background-image: url('img/loginbg.png');
     }
     </style>
-    <body style="background-color:grey;     
+    <body style="background-color:black;     
     display: flex;
     align-items: center;
     justify-content: center;">
