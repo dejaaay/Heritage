@@ -22,7 +22,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
-        <?php include "navbar.php"; ?>
+        <?php include "../Navbar/header.php"; ?>
         <!-- Greetings card na naka carousell part -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -175,6 +175,6 @@
                 </div>
             </div>   
         <br>
-            <?php include "footer.php"; ?>
+            <?php include "../footer/footer.php"; ?>
     </body>
 </html>
