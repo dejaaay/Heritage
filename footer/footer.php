@@ -10,15 +10,15 @@
   <footer>
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="../assets/images/SK-LogoSq.png" alt="Logo" class="logo" />
+        <img src="../img/Cabalen.png" alt="Logo" class="logo" />
       </div>
       <div class="footer-section contact-section">
         <h3>Contact Us</h3>
-        <p>Email: streetkohi@gmail.com</p>
-        <p>Phone: +63 915 670 2316</p>
+        <p>Email: Heritagepampanga@gmail.com</p>
+        <p>Phone: +63 977 2356 480</p>
       </div>
       <div class="footer-section findus-section">
-        <h3>Find Us</h3>
+        <h3>About</h3>
         <ul class="location-container">
           <li class="location">
             <a href="#" class="locationtxt">63 Maginhawa, Quezon City</a>
@@ -35,25 +35,18 @@
         <h3>Follow Us</h3>
         <ul class="social-icons">
             <li>
-              <a href="https://www.facebook.com/streetkohi">
+              <a href="https://www.facebook.com/profile.php?id=100087116093597">
                 <img src="../assets/images/SK_Ideograms-FB.png" alt="Facebook" />
               </a>
             </li>
             <li>
-              <a href="https://www.tiktok.com/@streetkohi?_t=8jKHkE5Wgz4&_r=1">
+              <a href="https://twitter.com/CabalenEP">
                 <img src="../assets/images/SK_Ideograms-Tiktok.png" alt="TikTok" />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/streetkohi/">
+              <a href="https://www.instagram.com">
                 <img src="../assets/images/SK_Ideograms-IG.png" alt="Instagram" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.threads.net/@streetkohi?igshid=MzRlODBiNWFlZA%3D%3D"
-              >
-                <img src="../assets/images/SK_Ideograms-Featured.png" alt="Threads" />
               </a>
             </li>
           </ul>
@@ -65,7 +58,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 StreetKohi. All rights reserved.</p>
+      <p>&copy;All rights reserved.</p>
     </div>
   </footer>
 </body>
