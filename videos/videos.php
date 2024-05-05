@@ -18,7 +18,7 @@
 <body class="green-test-1">
 
     <!-- NavbarCode -->
-    <?php include "../Navbar/navbar.php"; ?>
+    <?php include "../Navbar/header.php"; ?>
 
     <!-- Content Section 1 -->
     <section>
