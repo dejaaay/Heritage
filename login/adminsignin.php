@@ -9,10 +9,10 @@
     </head>
     <style>
     body {
-      background-image: url('img/loginbg.png');
+      background-image: url('../img/loginbg.png');
     }
     </style>
-    <body style="background-color:black;     
+    <body style="background-color:grey;     
     display: flex;
     align-items: center;
     justify-content: center;">
