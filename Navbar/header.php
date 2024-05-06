@@ -38,7 +38,7 @@
           <li><a href="" onclick="handleNavClick(event)" class="nav-links">Blogs</a></li>
           <li><a href="" onclick="handleNavClick(event)" class="nav-links">Events</a></li>
           <li><a href="" onclick="handleNavClick(event)" class="nav-links">Videos</a></li>
-          <li><a href="" onclick="handleNavClick(event)" class="nav-links">Tours</a></li>
+          <li><a href="../Tours/ToursPage.php" onclick="handleNavClick(event)" class="nav-links">Tours</a></li>
 
 </header>
 

@@ -1,3 +1,5 @@
+<!-- di nagamit to -->
+
 <?php ?>
 <style>
 .navbar{
