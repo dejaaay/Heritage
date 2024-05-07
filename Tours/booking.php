@@ -1,4 +1,8 @@
+<!-- booking form -->
+
 <?php
+include '../connect/connect.php';
+
 
 if (isset($_POST['submit']) && isset($_POST['customer_name']) && isset($_POST['customer_number']) && isset($_POST['customer_email'])
         && isset($_POST['appointment_date']) && isset($_POST['appointment_time'])) {
