@@ -32,6 +32,11 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 }
+/* top margin para di nag overlap sa navbar */
+#row1 {
+	margin-top: 10%;
+}
+
 /* hover with name*/
 .middle {
 	opacity: 0;

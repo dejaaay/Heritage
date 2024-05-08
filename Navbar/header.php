@@ -40,10 +40,10 @@
         </div>
         <div class="nav-links-container">
           <ul>
-            <li><a href="" onclick="handleNavClick(event)" class="nav-links">Home</a></li>
+            <li><a href="../LandingPage/LandingPage.php" onclick="handleNavClick(event)" class="nav-links">Home</a></li>
             <li><a href="../Blogs/gallery.php" onclick="handleNavClick(event)" class="nav-links">Blogs</a></li>
             <li><a href="../Events/events.php" onclick="handleNavClick(event)" class="nav-links">Events</a></li>
-            <li><a href="" onclick="handleNavClick(event)" class="nav-links">Videos</a></li>
+            <li><a href="../videos/videos.php" onclick="handleNavClick(event)" class="nav-links">Videos</a></li>
             <li><a href="../Tours/ToursPage.php" onclick="handleNavClick(event)" class="nav-links">Tours</a></li>
 
   </header>

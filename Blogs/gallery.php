@@ -24,7 +24,7 @@
 <?php include "../Navbar/header.php"; ?>
 
 <div class="imgGallery p-2">
-<div class="row">
+<div class="row" id="row1">
   <div class="col-md-3 pt-2 pb-3">
     <div class="thumbnail" style="background-color:black">
       <a href="TouristDest_blogs.php#CandabaSwamp">
