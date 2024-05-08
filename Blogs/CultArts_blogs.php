@@ -23,43 +23,43 @@
     <?php include "../Navbar/header.php"; ?>
     <!-- images -->
     <div class="Parol1">
-        <img src="img/26.png" alt="Parol1" width="250" height="250">
+        <img src="../img/26.png" alt="Parol1" width="250" height="250">
     </div>
     <div class="Pot">
-        <img src="img/27.png" alt="Pot" width="250" height="250">
+        <img src="../img/27.png" alt="Pot" width="250" height="250">
     </div>
     <div class="Hammer">
-        <img src="img/28.png" alt="Hammer" width="250" height="250">
+        <img src="../img/28.png" alt="Hammer" width="250" height="250">
     </div>
     <div class="Parol2">
-        <img src="img/29.png" alt="Parol2" width="250" height="250">
+        <img src="../img/29.png" alt="Parol2" width="250" height="250">
     </div>
     <div class="Knife">
-        <img src="img/30.png" alt="Knife" width="250" height="250">
+        <img src="../img/30.png" alt="Knife" width="250" height="250">
     </div>
     <div class="Kite">
-        <img src="img/31.png" alt="Kite" width="250" height="250">
+        <img src="../img/31.png" alt="Kite" width="250" height="250">
     </div>
     <div class="Rug">
-        <img src="img/32.png" alt="Rug" width="250" height="250">
+        <img src="../img/32.png" alt="Rug" width="250" height="250">
     </div>
     <div class="Hat">
-        <img src="img/33.png" alt="Hat" width="250" height="250">
+        <img src="../img/33.png" alt="Hat" width="250" height="250">
     </div>
     <div class="Lantern">
-        <img src="img/34.png" alt="Lantern" width="250" height="250">
+        <img src="../img/34.png" alt="Lantern" width="250" height="250">
     </div>
     <div class="Log">
-        <img src="img/35.png" alt="Log" width="250" height="250">
+        <img src="../img/35.png" alt="Log" width="250" height="250">
     </div>
     <div class="Santo">
-        <img src="img/36.png" alt="Santo" width="250" height="250">
+        <img src="../img/36.png" alt="Santo" width="250" height="250">
     </div>
     <div class="Guitar">
-        <img src="img/37.png" alt="Guitar" width="250" height="250">
+        <img src="../img/37.png" alt="Guitar" width="250" height="250">
     </div>
     <div class="Frog">
-        <img src="img/38.png" alt="Frog" width="250" height="250">
+        <img src="../img/38.png" alt="Frog" width="250" height="250">
     </div>
     <div class="container px-5" id="ArtsCulture">
         <div class="row gx-5 align-items-center">

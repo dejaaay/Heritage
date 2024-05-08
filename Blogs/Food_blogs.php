@@ -22,7 +22,7 @@
 
   <?php include "../Navbar/header.php"; ?>
   <div class="mushroom1">
-    <img src="img/1.png" alt="Mushroom Icon" width="250" height="250">
+    <img src="../img/1.png" alt="Mushroom Icon" width="250" height="250">
   </div>
   <!--
     <div class="mushroom2">
@@ -30,28 +30,28 @@
     </div>
     -->
   <div class="murcon2">
-    <img src="img/12.png" alt="Murcon Icon" width="250" height="250">
+    <img src="../img/12.png" alt="Murcon Icon" width="250" height="250">
   </div>
   <div class="bbq1">
-    <img src="img/3.png" alt="Bbq Icon" width="250" height="250">
+    <img src="../img/3.png" alt="Bbq Icon" width="250" height="250">
   </div>
   <div class="bbq2">
-    <img src="img/4.png" alt="Bbq Icon" width="250" height="250">
+    <img src="../img/4.png" alt="Bbq Icon" width="250" height="250">
   </div>
   <div class="bowl1">
-    <img src="img/7.png" alt="Bowl Icon" width="250" height="250">
+    <img src="../img/7.png" alt="Bowl Icon" width="250" height="250">
   </div>
   <div class="bowl2">
-    <img src="img/8.png" alt="Bowl Icon" width="250" height="250">
+    <img src="../img/8.png" alt="Bowl Icon" width="250" height="250">
   </div>
   <div class="juice1">
-    <img src="img/9.png" alt="Juice Icon" width="250" height="250">
+    <img src="../img/9.png" alt="Juice Icon" width="250" height="250">
   </div>
   <div class="juice2">
-    <img src="img/10.png" alt="Juice Icon" width="250" height="250">
+    <img src="../img/10.png" alt="Juice Icon" width="250" height="250">
   </div>
   <div class="sili">
-    <img src="img/6.png" alt="Sili Icon" width="250" height="250">
+    <img src="../img/6.png" alt="Sili Icon" width="250" height="250">
   </div>
 
   <div class="container px-5" id="Food">

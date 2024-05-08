@@ -30,13 +30,13 @@
           <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gallery.php">Blogs</a>
+          <a class="nav-link" href="../Blogs/gallery.php">Blogs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../Events/events.php">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="videos.php">Videos</a>
+          <a class="nav-link" href="../videos.php">Videos</a>
         </li>
       </ul>
     </div>

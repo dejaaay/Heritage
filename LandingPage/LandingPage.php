@@ -83,7 +83,7 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-1"><img class="img-fluid" src="assets/img/HotAirBalloonClark01.jpg" alt="Cabalen Image 1"/></div>
+                        <div class="p-1"><img class="img-fluid" src="../assets/img/HotAirBalloonClark01.jpg" alt="Cabalen Image 1"/></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-1">
@@ -102,7 +102,7 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6">
-                        <div class="p-1"><img class="img-fluid" src="assets/img/LigliganParul01.jpg" alt="Cabalen Image 2"/></div>
+                        <div class="p-1"><img class="img-fluid" src="../assets/img/LigliganParul01.jpg" alt="Cabalen Image 2"/></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-1">
