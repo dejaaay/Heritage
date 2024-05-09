@@ -25,7 +25,7 @@
 
 <style>
     #carouselExampleControls {
-        margin-top: 9%;
+        margin-top: 180px;
     }
 </style>
 
