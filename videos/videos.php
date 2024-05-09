@@ -18,7 +18,7 @@
 </head>
 <style>
     #row1 {
-        margin-top: 9%;
+        margin-top: 150px;
     }
 </style>
 
