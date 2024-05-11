@@ -1,4 +1,23 @@
+<?php
+session_start();
+if(isset($_POST['Submit'])) {
+  
+  $logins = array('admin@heritage' => 'admin',);
 
+  $email =isset( $_POST['user_email']) ? $_POST['user_email']:'';
+  $password =isset( $_POST['user_password']) ? $_POST['user_password']:'';
+
+  if (isset($logins[$email]) && $logins[$email] == $password){
+    $_SESSION['UserData']['user_email']=$logins[$email];
+    header("location:admin/post/create.php");
+    exit;
+    } else {
+    
+  
+    $msg="<span style='color:red'>Invalid Login Details</span>";
+    }
+}
+?>
 <html>
     <head>
         <meta charset="utf-8">
