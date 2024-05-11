@@ -43,10 +43,8 @@ body{
 	opacity: 0;
 	position: absolute;
 	text-align: center;
-	margin-left: 75px;
-	margin-right: 75px;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	margin: auto;
+	margin: 50px 20px;
 	/* transform pag position ng text*/
 	transform: translate(10%, -255%);
 	-ms-transform: translate(0%, -125%);
