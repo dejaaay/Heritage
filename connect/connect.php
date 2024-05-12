@@ -1,10 +1,11 @@
 <?php
-$con = new mysqli('localhost','root','','heritage');
-if($con->connect_error) {
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db_name = "heritage";
 
-    die(mysqli_error($con));
-}
-else {
+$conn = mysqli_connect($servername, $username, $password, $db_name);
 
+if (!$conn) {
+    echo "Connection Failed";
 }
-?>

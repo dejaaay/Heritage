@@ -16,15 +16,20 @@ session_start();
 <body>
     <div class="container">
         <div class="wrapper">
-            <div class="title"><span>Login Form</span></div>
-            <form action="admin-login.php">
+            <div class="title"><span>Login</span></div>
+
+            <?php if (isset($_GET['error'])) { ?>
+                <p class="error"><?php echo $_GET['error']; ?></p>
+            <?php } ?>
+
+            <form action="login.php" method="POST"> <!-- Specify method as POST -->
                 <div class="row">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Email or Phone" required>
+                    <input type="text" name="username" placeholder="Email or Phone" required>
                 </div>
                 <div class="row">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name="password" placeholder="Password" required>
                 </div>
                 <div class="row button">
                     <input type="submit" value="Login">
