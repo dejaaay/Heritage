@@ -1,6 +1,6 @@
 <?php
 // Include database connection
-include('connect.php');
+include('../../connect/connect.php');
 
 // Get the archevent_id from the request
 $appointment_id = isset($_GET['appointment_id']) ? intval($_GET['appointment_id']) : 0;
@@ -24,6 +24,6 @@ if ($appointment_id > 0) {
 }
 
 // Redirect to the archive page
-header("Location: bookings.php");
+header("Location: admin-dashboard.php");
 exit;
 ?>
