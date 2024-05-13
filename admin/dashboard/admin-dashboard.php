@@ -43,7 +43,7 @@
                 <tbody>
                     <?php
                     // Include database connection
-                    include('../../connect.php');
+                    include('../../connect/connect.php');
 
                     // Prepare the fetch query for archive_event table
                     $stmt_fetch = mysqli_prepare($con, "SELECT * FROM `booking`");
@@ -77,11 +77,12 @@
                             echo '<button class="delete-button" onclick="showConfirmationModal(' . htmlspecialchars($apptmnt['appointment_id']) . ')">Delete</button>';
                             echo '</td>';
 
+                            echo 'button class="update-button" onclick
                             echo '</tr>';
                         }
                     } else {
                         // Output an error message if no archive event data is found
-                        echo '<tr><td colspan="10">No archive events found.</td></tr>';
+                        echo '<tr><td colspan="10">No appointments found.</td></tr>';
                     }
 
                     // Close the prepared statement
@@ -100,13 +101,6 @@
             if (confirm("Are you sure you want to delete this appointment permanently?")) {
                 // If the user confirms, redirect to the delete script
                 window.location.href = 'delete_from_bookings.php?appointment_id=' + appointment_id;
-            }
-        }
-        function showConfirmationModal(reg_id) {
-            // Show the confirmation dialog
-            if (confirm("Are you sure you want to delete this registration permanently?")) {
-                // If the user confirms, redirect to the delete script
-                window.location.href = 'deletereg.php?reg_id=' + reg_id;
             }
         }
     </script>
