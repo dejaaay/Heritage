@@ -45,6 +45,10 @@ if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answe
 </head>
 
 <body>
+    <!-- Back Button -->
+    <div class="d-flex justify-content-start mt-3">
+        <a href="admin-login.php" class="btn btn-secondary row-button">Back</a>
+    </div>
     <div class="container">
         <div class="wrapper">
             <div class="title text-center"><span>Forgot Password</span></div>
@@ -66,7 +70,7 @@ if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answe
                     <input type="text" class="form-control" id="answer3" name="answer3" required>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary row-button">Submit</button>
                 </div>
             </form>
         </div>
