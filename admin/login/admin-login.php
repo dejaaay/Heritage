@@ -24,6 +24,10 @@ session_start();
                 <p class="error text-center"><?php echo $_GET['error']; ?></p>
             <?php } ?>
 
+            <?php if (isset($_GET['success'])) { ?>
+                <p class="alert alert-success text-center"><?php echo $_GET['success']; ?></p>
+            <?php } ?>
+
             <form action="login.php" method="POST"> <!-- Specify method as POST -->
                 <div class="row">
                     <i class="fas fa-user"></i>

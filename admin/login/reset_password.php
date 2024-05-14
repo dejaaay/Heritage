@@ -19,17 +19,22 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
     $confirm_password = validate($confirm_password);
 
     if ($password !== $confirm_password) {
-        echo "Passwords do not match.";
+        header("Location: reset_password.php?error=Passwords do not match");
+        exit();
     } else {
+        // Hash the password before storing it
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
+
         // Update the user's password in the database
-        $sql = "UPDATE admin SET password='$password' WHERE username='$username'";
+        $sql = "UPDATE admin SET password='$password_hash' WHERE username='$username'";
         if (mysqli_query($con, $sql)) {
             // Unset the reset_user session variable
             unset($_SESSION['reset_user']);
-            header("Location: admin-login.php");
-            echo "Your password has been reset successfully.";
+            header("Location: admin-login.php?success=Your password has been reset successfully");
+            exit();
         } else {
-            echo "Something went wrong. Please try again.";
+            header("Location: reset_password.php?error=Something went wrong. Please try again.");
+            exit();
         }
     }
 } elseif (!isset($_SESSION['reset_user'])) {
@@ -37,6 +42,7 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
     exit();
 }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -53,6 +59,11 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="card p-4">
             <h2 class="text-center mb-4">Reset Password</h2>
+            <?php if (isset($_GET['error'])) { ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php echo $_GET['error']; ?>
+                </div>
+            <?php } ?>
             <form action="reset_password.php" method="POST">
                 <div class="mb-3">
                     <label for="password" class="form-label">Enter your new password:</label>
