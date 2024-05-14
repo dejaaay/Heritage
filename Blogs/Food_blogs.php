@@ -18,10 +18,16 @@
   <title>Food Blogpage</title>
 </head>
 
+<style>
+  #mushroom1 {
+    margin-top: 200px;
+  }
+</style>
+
 <body>
 
   <?php include "../Navbar/header.php"; ?>
-  <div class="mushroom1">
+  <div class="mushroom1" id="mushroom1">
     <img src="../img/1.png" alt="Mushroom Icon" width="250" height="250">
   </div>
   <!--

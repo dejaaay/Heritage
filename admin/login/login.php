@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../../connect/connect.php"; // Assuming this file contains your database connection
+include "../../connect/connect.php";
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     function validate($data)
@@ -23,7 +23,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
     // Execute SQL query to check if the user exists
     $sql = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
-    $result = mysqli_query($conn, $sql);
+    $result = mysqli_query($con, $sql);
 
     if ($result) {
         // Check if exactly one row was returned

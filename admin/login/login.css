@@ -96,3 +96,25 @@ form .row input::placeholder{
 form .button input:hover{
   background: #B0A695;
 }
+.error {
+  background: #f2dede;
+  color: #a94442;
+  margin: 10px;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+.success {
+  background: #D4EDDA;
+  color: #40754C;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+#logo{
+  position: absolute;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  height: 75px;
+}
