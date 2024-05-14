@@ -22,11 +22,9 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
         header("Location: reset_password.php?error=Passwords do not match");
         exit();
     } else {
-        // Hash the password before storing it
-        $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
         // Update the user's password in the database
-        $sql = "UPDATE admin SET password='$password_hash' WHERE username='$username'";
+        $sql = "UPDATE admin SET password='$password' WHERE username='$username'";
         if (mysqli_query($con, $sql)) {
             // Unset the reset_user session variable
             unset($_SESSION['reset_user']);
