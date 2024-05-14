@@ -111,10 +111,3 @@ form .button input:hover{
   width: 95%;
   border-radius: 5px;
 }
-#logo{
-  position: absolute;
-  display: flex;
-  align-items: start;
-  justify-content: space-around;
-  height: 75px;
-}

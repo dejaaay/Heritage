@@ -18,7 +18,7 @@ session_start();
 <body>
     <div class="container">
         <div class="wrapper">
-            <div class="title"><span><img src="../../img/Cabalen.png" alt="Cabalen" class="content-center" id="logo">Login</span></div>
+            <div class="title"><span>Login</span></div>
 
             <?php if (isset($_GET['error'])) { ?>
                 <p class="error text-center"><?php echo $_GET['error']; ?></p>
@@ -36,7 +36,7 @@ session_start();
                 <div class="row button">
                     <input type="submit" value="Login">
                 </div>
-                <a href="">Forgot your password?</a>
+                <a href="forgot_password.php">Forgot your password?</a>
             </form>
         </div>
     </div>
