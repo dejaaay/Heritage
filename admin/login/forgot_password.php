@@ -40,32 +40,36 @@ if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answe
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="forgot_password.css">
 </head>
 
 <body>
     <div class="container">
-        <h2>Forgot Password</h2>
-        <form action="forgot_password.php" method="POST">
-            <div>
-                <label for="username">Enter your username:</label>
-                <input type="text" name="username" required>
-            </div>
-            <div>
-                <label for="answer1">Security Question 1:</label>
-                <input type="text" name="answer1" required>
-            </div>
-            <div>
-                <label for="answer2">Security Question 2:</label>
-                <input type="text" name="answer2" required>
-            </div>
-            <div>
-                <label for="answer3">Security Question 3:</label>
-                <input type="text" name="answer3" required>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+        <div class="wrapper">
+            <div class="title text-center"><span>Forgot Password</span></div>
+            <form action="forgot_password.php" method="POST">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Enter your username:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="answer1" class="form-label">Security Question 1:</label>
+                    <input type="text" class="form-control" id="answer1" name="answer1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="answer2" class="form-label">Security Question 2:</label>
+                    <input type="text" class="form-control" id="answer2" name="answer2" required>
+                </div>
+                <div class="mb-3">
+                    <label for="answer3" class="form-label">Security Question 3:</label>
+                    <input type="text" class="form-control" id="answer3" name="answer3" required>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
