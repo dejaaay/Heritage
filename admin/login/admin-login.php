@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once "../../connect/connect.php";
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +45,7 @@ require_once "../../connect/connect.php";
                 </div>
                 <a href="forgot_password.php">Forgot your password?</a>
             </form>
-            <div id="result"><?php echo $msg ?></div>
+
         </div>
     </div>
 
