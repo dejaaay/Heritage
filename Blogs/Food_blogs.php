@@ -15,7 +15,7 @@
   <link href="css/food_newsletter.css" rel="stylesheet">
   <link href="css/gallery.css" rel="stylesheet">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/dejaaay/Cabelen/main/assets/img/Cabalen.png">
-  <title>Food Blogpage</title>
+  <title>Food Blog</title>
 </head>
 
 <style>

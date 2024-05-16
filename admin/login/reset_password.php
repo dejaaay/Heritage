@@ -22,7 +22,6 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
         header("Location: reset_password.php?error=Passwords do not match");
         exit();
     } else {
-
         // Update the user's password in the database
         $sql = "UPDATE admin SET password='$password' WHERE username='$username'";
         if (mysqli_query($con, $sql)) {
