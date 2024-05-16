@@ -36,17 +36,17 @@
         <ul class="social-icons">
             <li>
               <a href="https://www.facebook.com/profile.php?id=100087116093597">
-                <img src="../assets/images/SK_Ideograms-FB.png" alt="Facebook" />
+                <img src="../assets/img/SK_Ideograms-FB.png" alt="Facebook" />
               </a>
             </li>
             <li>
               <a href="https://twitter.com/CabalenEP">
-                <img src="../assets/images/SK_Ideograms-Tiktok.png" alt="TikTok" />
+                <img src="../assets/img/SK_Ideograms-Tiktok.png" alt="TikTok" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com">
-                <img src="../assets/images/SK_Ideograms-IG.png" alt="Instagram" />
+                <img src="../assets/img/SK_Ideograms-IG.png" alt="Instagram" />
               </a>
             </li>
           </ul>
