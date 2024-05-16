@@ -42,6 +42,8 @@
           <ul>
             <li><a href="../LandingPage/LandingPage.php" onclick="handleNavClick(event)" class="nav-links">Home</a></li>
             <li><a href="../Blogs/gallery.php" onclick="handleNavClick(event)" class="nav-links">Blogs</a></li>
+            <li><a href="../Blogs/CultArts_blogs.php" onclick="handleNavClick(event)" class="nav-links">Culture</a></li>
+            <li><a href="../Blogs/Food_blogs.php" onclick="handleNavClick(event)" class="nav-links">Food</a></li>
             <li><a href="../Events/events.php" onclick="handleNavClick(event)" class="nav-links">Events</a></li>
             <li><a href="../videos/videos.php" onclick="handleNavClick(event)" class="nav-links">Videos</a></li>
             <li><a href="../Tours/ToursPage.php" onclick="handleNavClick(event)" class="nav-links">Tours</a></li>
