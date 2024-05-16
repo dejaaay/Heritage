@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once "../../connect/connect.php";
 ?>
 
 <!DOCTYPE html>
@@ -31,19 +32,39 @@ session_start();
             <form action="login.php" method="POST"> <!-- Specify method as POST -->
                 <div class="row">
                     <i class="fas fa-user"></i>
-                    <input type="text" name="username" placeholder="Email or Phone">
+                    <input type="text" name="username" id="username" placeholder="Username">
                 </div>
-                <div class="row">
+                <div class="row password-container">
                     <i class="fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <span class="toggle-password" onclick="togglePasswordVisibility()">
+                        <i id="eyeIcon" class="fas fa-eye" id="toggleEye"></i>
+                    </span>
                 </div>
                 <div class="row button">
                     <input type="submit" value="Login">
                 </div>
                 <a href="forgot_password.php">Forgot your password?</a>
             </form>
+            <div id="result"><?php echo $msg ?></div>
         </div>
     </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            const toggleEye = document.getElementById('toggleEye');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleEye.classList.remove('fa-eye');
+                toggleEye.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                toggleEye.classList.remove('fa-eye-slash');
+                toggleEye.classList.add('fa-eye');
+            }
+        }
+    </script>
 </body>
 
 </html>

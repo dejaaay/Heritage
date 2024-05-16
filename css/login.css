@@ -40,6 +40,12 @@ body{
 }
 .wrapper form .row{
   height: 45px;
+  width: 100%;
+  border-radius: 1px;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  height: auto !important;
+  padding: 0.5rem;
   margin-bottom: 15px;
   position: relative;
 }
@@ -96,6 +102,9 @@ form .row input::placeholder{
 form .button input:hover{
   background: #B0A695;
 }
+.fa{
+  font-size: 2rem;
+}
 .error {
   background: #f2dede;
   color: #a94442;
@@ -110,4 +119,36 @@ form .button input:hover{
   padding: 10px;
   width: 95%;
   border-radius: 5px;
+}
+.toggle-password{
+  background: none;
+  border: none;
+  font-weight: 600;
+  position: absolute;
+  right: .75rem;
+  top: 2.50rem;
+  z-index: 9;
+}
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* space for the icon */
+}
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password-container .toggle-password i {
+  font-size: 1.2em;
+  color: #776B5D;
 }
