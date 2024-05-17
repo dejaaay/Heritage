@@ -138,12 +138,19 @@ include '../../connect/connect.php';
                                 echo '<td>' . htmlspecialchars($nws['news_time']) . '</td>';
                                 echo "<td><img src='" . htmlspecialchars($nws['news_img']) . "' alt='News Image' class='coffee-image'></td>";
 
+
                                 // Add buttons for retrieve and delete actions
-                                echo '<td>';
+                                echo "<td>";
+                               
+                                echo "</td>";
+
+                                echo "<td>";
+                                echo "<a href='update-news.php?updateid=" . $nws['news_id'] . "' class='btn btn-success m-2 text-light btnUpdate'>Update</a>";
+                                echo "<a href='delete-news.php?deleteid=" . $nws['news_id'] . "' class='btn btn-danger m-2 text-light btnArchive' onclick='return confirm(\"Are you sure you want to delete this news?\")'>Delete</a>";
+                                echo "</td>";
 
                                 // Button to delete the archive event
-                                echo '<button class="delete-button" onclick="showConfirmationModal(' . htmlspecialchars($nws['news_id']) . ')">Delete</button>';
-                                echo '</td>';
+                                
         }
     } else {
         echo '<tr><td colspan="10" class="text-center">No News found</td></tr>';
