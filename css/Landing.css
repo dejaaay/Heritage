@@ -79,7 +79,6 @@ body {
 
 
   .showcase-card {
-    font-family: 'Open Sans', Arial, sans-serif; /*Papalitan pa ng iba */
     position: relative;
     float: left;
     overflow: hidden;
@@ -95,40 +94,24 @@ body {
     width: 100%;
     vertical-align: top;
     height: 70vh;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.2);
   }
   
-  .showcase-card .card-content {
-    width: 100%;
-    height: 0;
-    padding: 15px 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0%;
-    background-color: rgba(0,0,0,0);
+  .showcase-card-right{
+    position: relative;
+    float: left;
     overflow: hidden;
-    transition: .5s ease;
-  }
-  .showcase-container:hover .card-content{
-    height: 100vh;
-    background-color: rgba(0,0,0,0.75);
-  
-  }
-  .showcase-card h2 {
     width: 100%;
-    margin-top: 30%;
-    color: white;
-    font-size: 2vw;
-    position: absolute;
-    text-align: center;
-  }
-  .showcase-card p{
-    text-align: center;
     color: #ffffff;
-    font-size: 1.2vw;
-    margin: 60%;
-    width: 70%;
+    text-align: center;
+    height: 35vh;
+    border: none;
   }
-  
-  
+  .showcase-card-right .background {
+    width: 100%;
+    vertical-align: top;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.2);
+    height: 38vh;
+  }
