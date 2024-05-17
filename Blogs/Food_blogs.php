@@ -11,22 +11,23 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="css/blogs.css" rel="stylesheet">
-  <link href="css/food_newsletter.css" rel="stylesheet">
-  <link href="css/gallery.css" rel="stylesheet">
+  <link href="blogs.css" rel="stylesheet">
+  <link href="../css/foods_newsletter.css" rel="stylesheet">
+  <link href="../css/gallery.css" rel="stylesheet">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/dejaaay/Cabelen/main/assets/img/Cabalen.png">
   <title>Food Blog</title>
 </head>
 
 <style>
-  #mushroom1 {
-    margin-top: 200px;
+  h1 {
+    margin-top: 150px;
   }
 </style>
 
 <body>
 
   <?php include "../Navbar/header.php"; ?>
+
   <div class="mushroom1" id="mushroom1">
     <img src="../img/1.png" alt="Mushroom Icon" width="250" height="250">
   </div>
