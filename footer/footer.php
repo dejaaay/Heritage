@@ -21,13 +21,8 @@
         <h3>About</h3>
         <ul class="location-container">
           <li class="location">
-            <a href="#" class="locationtxt">63 Maginhawa, Quezon City</a>
-          </li>
-          <li class="location">
-            <a href="#" class="locationtxt">24 Mayaman, Quezon City</a>
-          </li>
-          <li class="location">
-            <a href="#" class="locationtxt">Mandaluyong</a>
+            <a href="#" class="locationtxt">Heritage offers an exceptional experience of Pampanga 
+              <br>right from the comfort of your homes.</br></a>
           </li>
         </ul>
       </div>
