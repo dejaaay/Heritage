@@ -34,7 +34,7 @@
     <div class="container">
       <nav>
         <div class="logo-container">
-          <a href="../landingpage/LandingPage.php" onclick="handleNavClick(event)">
+          <a href="admin-dashboard.php" onclick="handleNavClick(event)">
             <img src="../../img/CabalenLight.png" alt="CabelenLogo" class="StreetKohiLogo" />
           </a>
         </div>

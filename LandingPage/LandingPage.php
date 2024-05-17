@@ -2,25 +2,7 @@
 <!doctype html>
 <html lang="en">
 
-<!-- <head>
-    <title>Cabalen</title>
-    <link rel="shortcut icon" href="https://raw.githubusercontent.com/dejaaay/Cabelen/main/assets/img/Cabalen.png">
-    Required meta tags
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    Latest compiled and minified CSS 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-     Latest compiled JavaScript 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-     Bootstrap CSS 
-    <link href="../css/Landing.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     Optional JavaScript 
-     jQuery first, then Popper.js, then Bootstrap JS 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</head> -->
+
 
 <head>
     <meta charset="utf-8">
@@ -35,9 +17,8 @@
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/dejaaay/Cabelen/main/assets/img/Cabalen.png">
     
     <link href="../css/Landing.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <style>
@@ -54,7 +35,7 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="card text-white">
-                    <img src="https://mnltoday.ph/wp-content/uploads/2019/03/hot-air-balloon.jpg" class="card-img" alt="First slide">
+                    <img src="../img/new_balloon.jpg" class="card-img" alt="First slide">
                     <div class="card-img-overlay">
                         <h1 class="card-title1">Hot Air Balloon Festival</h1>
                     </div>
@@ -62,7 +43,7 @@
             </div>
             <div class="carousel-item ">
                 <div class="card text-white">
-                    <img src="https://gttp.imgix.net/308790/x/0/?auto=format%2Ccompress&crop=faces%2Cedges%2Ccenter&bg=%23fff&fit=crop&q=35&h=504&dpr=1" class="card-img" alt="second slide">
+                    <img src="../img/pinatubo.jpg" class="card-img" alt="second slide">
                     <div class="card-img-overlay">
                         <h1 class="card-title1">Mt. Pinatubo Crater Lake</h1>
                     </div>
@@ -78,28 +59,20 @@
             </div>
             <div class="carousel-item ">
                 <div class="card text-white">
-                    <img src="http://www.traveltothephilippines.info/wp-content/uploads/2012/06/Pampanga-Sinukwan-Festival4.jpg" class="card-img" alt="fourth slide">
+                    <img src="../img/sinukwan_festival.jpg" class="card-img" alt="fourth slide">
                     <div class="card-img-overlay">
                         <h1 class="card-title1">Sinukwan Festival</h1>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item ">
-                <div class="card text-white">
-                    <img src="https://2.bp.blogspot.com/-Om3GfjfF9Sw/XfgPi5uI6rI/AAAAAAAA80A/-xFymE-ZFtQXD195bPp5RFdG-epwezE-gCLcBGAsYHQ/s1600/79371861_1062324827444680_1454270166874456064_n.jpg" class="card-img" alt="Fifth slide">
-                    <div class="card-img-overlay">
-                        <h1 class="card-title1">Giant Lantern Festival</h1>
-                    </div>
-                </div>
-            </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="visually-hidden">Next</span>
         </a>
     </div>
     <br>
