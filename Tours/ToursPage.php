@@ -4,70 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
+    <link rel="stylesheet" href="../css/tourspage.css">
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* CSS styling */
-        .main-content-container {
-            display: flex;
-            align-items: stretch;
-        }
-        .col-md-6 {
-            display: flex;
-            align-items: stretch;
-        }
-        .right-text {
-            background-color: #f2f2f2;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            font-size: 28px;
-            padding: 20px; /* Added padding for spacing */
-            display: flex;
-            align-items: center; /* Align text vertically */
-        }
-
-        .main-content-container img {
-            height: 100%;
-            object-fit: cover;
-        }
-
-/* Apply the provided styles to the button */
-button {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-
-button:hover {
-  background-color: #23c483;
-  -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  -webkit-transform: translateY(-7px);
-  -ms-transform: translateY(-7px);
-  transform: translateY(-7px);
-}
-
-button:active {
-  -webkit-transform: translateY(-1px);
-  -ms-transform: translateY(-1px);
-  transform: translateY(-1px);
-}
-
-
-    </style>
 </head>
 
 
@@ -97,13 +36,10 @@ button:active {
     </div>
 
 <!-- Button Section -->
-<div class="button-container">
-    <form action="booking.php" method="get">
-        <button class="btn btn-primary" type="submit">Tour with us!</button>
-    </form>
+<!-- Button Section -->
+<div class="text-center">
+  <button class="button" onclick="location.href='booking.php'">Tour with us!</button>
 </div>
-
-
     <?php include "../footer/footer.php"; ?>
 
     <!-- Include Bootstrap JS and other scripts -->
