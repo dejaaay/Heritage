@@ -81,37 +81,42 @@
     <section id="scroll">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <!-- Can change to a card with text or text that shows on hover -->
-
+                <div class="col-md-4 showcase-container">
                     <div class="card showcase-card">
                         <img src="../img/2.png"
                             alt="image1" class="background" />
-                        <div class="card-content">
+                        <div class="card-content d-flex justify-content-center">
                             <h2>Placeholder</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, perspiciatis!</p>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 showcase-container">
                     <div class="card showcase-card">
                         <img src="../img/1.png"
                             alt="image2" class="background" />
-                        <div class="card-content">
+                        <div class="card-content d-flex justify-content-center">
                             <h2>Placeholder</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, perspiciatis!</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 showcase-container">
                     <div class="card showcase-card">
                         <img src="../img/3.png"
                             alt="image3" class="background" />
-                        <div class="card-content">
+                        <div class="card-content d-flex justify-content-center">
                             <h2>Placeholder</h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, perspiciatis!</p>
+
                         </div>
                     </div>
                 </div>
             </div>    
-    </section>
+        </section>
+
+
     <br>
     <br>
     <!--Video part-->
