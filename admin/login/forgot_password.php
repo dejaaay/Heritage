@@ -2,6 +2,8 @@
 session_start();
 include "../../connect/connect.php";
 
+$error = '';
+
 if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answer2'])) {
     $username = $_POST['username'];
     $answer1 = $_POST['answer1'];
@@ -25,10 +27,10 @@ if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answe
             header("Location: reset_password.php");
             exit();
         } else {
-            echo "Incorrect answers to security questions.";
+            $error = "Incorrect answers to security questions.";
         }
     } else {
-        echo "No account found with that username.";
+        $error = "No account found with that username.";
     }
 }
 ?>
@@ -40,7 +42,7 @@ if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answe
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forgot Password</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../../css/forgot_password.css">
 </head>
 
@@ -49,24 +51,29 @@ if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answe
     <div class="d-flex justify-content-start mt-3">
         <a href="admin-login.php" class="btn btn-secondary row-button">Back</a>
     </div>
-    <div class="container mt-5">
+    <div class="container vh-100 align-items-center d-flex justify-content-start mt-0">
         <div class="wrapper">
             <div class="title text-center"><span>Forgot Password</span></div>
             <form action="forgot_password.php" method="POST">
+                <?php if (!empty($error)) { ?>
+                    <div class="alert alert-danger" role="alert">
+                        <?php echo $error; ?>
+                    </div>
+                <?php } ?>
                 <div class="mb-3">
                     <label for="username" class="form-label">Enter your username:</label>
                     <input type="text" class="form-control" id="username" name="username" required>
                 </div>
                 <div class="mb-3">
-                    <label for="answer1" class="form-label">Security Question 1:</label>
+                    <label for="answer1" class="form-label">Security Question 1: What's your favorite subject?</label>
                     <input type="text" class="form-control" id="answer1" name="answer1" required>
                 </div>
                 <div class="mb-3">
-                    <label for="answer2" class="form-label">Security Question 2:</label>
+                    <label for="answer2" class="form-label">Security Question 2: Who's your favorite professor?</label>
                     <input type="text" class="form-control" id="answer2" name="answer2" required>
                 </div>
                 <div class="mb-3">
-                    <label for="answer3" class="form-label">Security Question 3:</label>
+                    <label for="answer3" class="form-label">Security Question 3: Who's the most handsome professor?</label>
                     <input type="text" class="form-control" id="answer3" name="answer3" required>
                 </div>
                 <div class="d-flex justify-content-center">
