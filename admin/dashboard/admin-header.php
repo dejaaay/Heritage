@@ -26,6 +26,32 @@
       transition: transform 0.8s ease-in-out;
       /* Smooth transition */
     }
+
+    /* Logout button */
+    #logout-btn {
+        color: white;
+        transition: color 0.3s ease; /* Add transition for color change */
+    }
+
+    #logout-btn:hover {
+        color: #EE4E4E; /* Change color on hover */
+    }
+    button.logout-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    button.logout-btn.btn-danger {
+      background-color: red;
+    }
+    
+    button.logout-btn.btn-danger:active {
+      background-color: red;
+      color: red;
+    }
+
   </style>
 </head>
 
@@ -34,7 +60,7 @@
     <div class="container">
       <nav>
         <div class="logo-container">
-          <a href="admin-dashboard.php" onclick="handleNavClick(event)">
+          <a href="" onclick="handleNavClick(event)">
             <img src="../../img/CabalenLight.png" alt="CabelenLogo" class="StreetKohiLogo" />
           </a>
         </div>
@@ -42,8 +68,13 @@
           <ul>
             <li><a href="admin-news.php" onclick="handleNavClick(event)" class="nav-links">News<News /a>
             </li>
-            <li><a href="" onclick="handleNavClick(event)" class="nav-links">Appointments</a></li>
-            <button><a class="nav-link" href="../login/logout.php">Logout</a></button>
+            <li><a href="admin-dashboard.php" onclick="handleNavClick(event)" class="nav-links">Appointments</a></li>
+            <li><a href="" onclick="handleNavClick(event)" class="nav-links">Restaurants</a></li>
+
+            <button id="logout-btn" class="logout-btn btn btn btn-danger btn-lg d-flex justify-content-end">
+    <a style="color: white; text-decoration: none;" class="nav-link" href="../login/logout.php">Logout</a>
+</button>
+
   </header>
 
   <script src="../javascript/header.js"></script>
