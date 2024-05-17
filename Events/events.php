@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../admin/products/connect.php';
+include '../connect/connect.php';
 
 ?>
 
@@ -22,7 +22,7 @@ include '../admin/products/connect.php';
 <body>
     <!-- Header -->
     <div>
-        <?php include "../header/header.php"; ?>
+        <?php include "../Navbar/header.php"; ?>
     </div>
 
     <!-- Carousel -->
@@ -72,38 +72,32 @@ include '../admin/products/connect.php';
     <div class="events">
         <div class="row">
             <?php
-            include '../admin/products/connect.php';
-            
-           
+
            // Query for Customer events
-$sql_customer = "SELECT * FROM `event` WHERE `event_tag` = 'Customer'"; /// CHANGE INTO
+$sql_customer = "SELECT * FROM `news`"; /// CHANGE INTO
 $result_customer = mysqli_query($con, $sql_customer);
 
 if ($result_customer && mysqli_num_rows($result_customer) > 0) {
     while ($row = mysqli_fetch_assoc($result_customer)) {
         // Display Customer events
-        echo '<div class="col-md-4 event-card" data-tag="' . $row['event_tag'] . '">';
         echo '<div class="card shadow showevent" style="width: 18rem;"';
-        echo 'data-event_name="' . $row['event_name'] . '"';
-        echo 'data-event_description="' . $row['event_description'] . '"';
-        echo 'data-event_date="' . date("F j, Y", strtotime($row['event_date'])) . '"';
-        echo 'data-event_time="' . date("g:i a", strtotime($row['event_time'])) . '"';
-        echo 'data-event_price="' . $row['event_price'] . '"';
-        echo 'data-event_image="../admin/products/' . $row['event_image'] . '"';
-        echo 'data-event_venue="' . $row['event_venue'] . '">';
+        echo 'data-news_name="' . $row['news_name'] . '"';
+        echo 'data-news_description="' . $row['news_desc'] . '"';
+        echo 'data-news_date="' . date("F j, Y", strtotime($row['news_date'])) . '"';
+        echo 'data-news_time="' . date("g:i a", strtotime($row['news_time'])) . '"';
+        echo 'data-news_image="../admin/dashboard/' . $row['news_img'] . '"';
         echo '<div class="card-header">';
-        echo '<h5 class="card-title">' . $row['event_name'] . '</h5>';
+        echo '<h5 class="card-title">' . $row['news_name'] . '</h5>';
         echo '</div>';
-        echo '<img class="card-img-top" src="../admin/products/' . $row['event_image'] . '" alt="Event image">';
+        echo '<img class="card-img-top" src="../admin/dashboard/' . $row['news_img'] . '" alt="news image">';
         
-        // Truncate the event description to a specific length (e.g., 50 characters)
-        $fullDescription = $row['event_description'];
+        // Truncate the news description to a specific length (e.g., 50 characters)
+        $fullDescription = $row['news_desc'];
         $truncatedDescription = strlen($fullDescription) > 150 ? substr($fullDescription, 0, 150) . '...' : $fullDescription;
         
         echo '<div class="card-body">';
-        echo '<p class="card-text">' . date("F j, Y", strtotime($row['event_date'])) . ' ' . date("g:i a", strtotime($row['event_time'])) . '</p>';
+        echo '<p class="card-text">' . date("F j, Y", strtotime($row['news_date'])) . ' ' . date("g:i a", strtotime($row['news_time'])) . '</p>';
         echo '<p class="card-text">' . $truncatedDescription . '</p>'; // Display truncated description
-        echo '<p class="card-text">₱' . number_format($row['event_price'], 2) . '</p>';
         echo '</div>';
         echo '</div>';
         echo '</div>';
@@ -113,57 +107,6 @@ if ($result_customer && mysqli_num_rows($result_customer) > 0) {
         </div>
     </div>
 
-    <!-- Headings for sections -->
-    <div class="text-center mb-4">
-        <h2 class="Nameplate">Seller</h2>
-    </div>
-
-    <!-- Events section for Sellers -->
-    <div class="events">
-        <div class="row">
-            <?php
-           
-// Query for Seller events
-$sql_seller = "SELECT * FROM `event` WHERE `event_tag` = 'Seller'";
-$result_seller = mysqli_query($con, $sql_seller);
-
-if ($result_seller && mysqli_num_rows($result_seller) > 0) {
-    while ($row = mysqli_fetch_assoc($result_seller)) {
-        // Display Seller events
-        echo '<div class="col-md-4 event-card" data-tag="' . $row['event_tag'] . '">';
-        echo '<div class="card shadow showevent" style="width: 18rem;"';
-        echo 'data-event_name="' . $row['event_name'] . '"';
-        echo 'data-event_description="' . $row['event_description'] . '"';
-        echo 'data-event_date="' . date("F j, Y", strtotime($row['event_date'])) . '"';
-        echo 'data-event_time="' . date("g:i a", strtotime($row['event_time'])) . '"';
-        echo 'data-event_price="' . $row['event_price'] . '"';
-        echo 'data-event_image="../admin/products/' . $row['event_image'] . '"';
-        echo 'data-event_venue="' . $row['event_venue'] . '">';
-        echo '<div class="card-header">';
-        echo '<h5 class="card-title">' . $row['event_name'] . '</h5>';
-        echo '</div>';
-        
-        // Display event image
-        echo '<img class="card-img-top" src="../admin/products/' . $row['event_image'] . '" alt="Event image">';
-        
-        // Truncate the event description in the card body
-        $fullDescription = $row['event_description'];
-        $truncatedDescription = strlen($fullDescription) > 150 ? substr($fullDescription, 0, 150) . '...' : $fullDescription;
-        
-        // Display event information in the card body
-        echo '<div class="card-body">';
-        echo '<p class="card-text">' . date("F j, Y", strtotime($row['event_date'])) . ' ' . date("g:i a", strtotime($row['event_time'])) . '</p>';
-        echo '<p class="card-text">' . $truncatedDescription . '</p>'; // Display truncated description in the card
-        echo '<p class="card-text">₱' . number_format($row['event_price'], 2) . '</p>';
-        echo '</div>';
-        
-        echo '</div>';
-        echo '</div>';
-    }
-}
-            ?>
-        </div>
-    </div>
 
 
 
@@ -210,7 +153,7 @@ $(document).ready(function() {
         var eventCard = $(this);
         
         // Retrieve data attributes from the event card
-        var eventTitle = eventCard.find('.card-title').text(); // Event title
+        var newsname = eventCard.find('.card-title').text(); // Event title
         var eventImageSrc = eventCard.find('.card-img-top').attr('src'); // Event image source
         var eventDesc = eventCard.find('.card-text').eq(1).text(); // Event description
         
