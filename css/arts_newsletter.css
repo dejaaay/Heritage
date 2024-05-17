@@ -1,0 +1,111 @@
+/* icons */
+.Parol1{
+	position: absolute;
+	left: 115px;
+	top: 378px;
+}
+.Pot{
+	position: absolute;
+	left: 1150px;
+	top: 1021px;
+}
+.Hammer{
+	position: absolute;
+	left: 115px;
+	top: 1637px;
+}
+.Parol2{
+	position: absolute;
+	left: 1150px;
+	top: 2320px;
+}
+.Knife{
+	position: absolute;
+	left: 115px;
+	top: 2995px;
+}
+.Kite{
+	position: absolute;
+	left: 1150px;
+	top: 3660px;
+}
+.Rug{
+	position: absolute;
+	left: 115px;
+	top: 4360px;
+}
+.Hat{
+	position: absolute;
+	left: 1150px;
+	top: 5030px;
+}
+.Lantern{
+	position: absolute;
+	left: 115px;
+	top: 5630px;
+}
+.Log{
+	position: absolute;
+	left: 1150px;
+	top: 6385px;
+}
+.Santo{
+	position: absolute;
+	left: 115px;
+	top: 7120px;
+}
+.Guitar{
+	position: absolute;
+	left: 1150px;
+	top: 7920px;
+}
+.Frog{
+	position: absolute;
+	left: 115px;
+	top: 8630px;
+}
+/* News letter */
+input[type=text]  {
+	width: 35%;
+	padding: 8px;
+	margin: 1px 0;
+	margin-bottom: 0px;
+	/*display: inline-block;*/
+	position: absolute;
+    left: 470px;
+    top: 9434px;
+    
+} 
+input[type=submit]{
+    width: 35%;
+	padding: 8px;
+	margin: 1px 0;
+	margin-bottom: 0px;
+	/*display: inline-block;*/
+    position: absolute;
+    left: 470px;
+    top: 9474px;
+}
+  
+input[type=submit] {
+	margin-top: 5px;
+	background-color: #208c78;
+	color: white;
+	border: none;
+}
+  
+input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+.newsletter{
+    position: absolute;
+    left: 470px;
+    top: 9244px;
+
+}
+.img{
+    position: absolute;
+    left: 35px;
+    top: 9164px;
+}

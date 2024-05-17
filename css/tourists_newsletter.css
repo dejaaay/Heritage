@@ -1,0 +1,93 @@
+/* --Icons-- */
+.road1{
+	position: absolute;
+	left: 115px;
+	top: 400px;
+}
+.road2{
+	position: absolute;
+	left: 1150px;
+	top: 2500px;
+}
+.pin1{
+	position: absolute;
+	left: 115px;
+	top: 3250px;
+}
+.pin2{
+	position: absolute;
+	left: 1150px;
+	top: 1050px;
+}
+.mountain1{
+	position: absolute;
+	left: 1150px;
+	top: 5400px;
+}
+.mountain2{
+	position: absolute;
+	left: 115px;
+	top: 1870px;
+}
+.trees1{
+	position: absolute;
+	left: 115px;
+	top: 6050px;
+}
+.trees2{
+	position: absolute;
+	left: 1150px;
+	top: 3875px;
+}
+.map1{
+	position: absolute;
+	left: 115px;
+	top: 4625px;
+}
+/* --end of Icons-- */
+
+/* News letter */
+input[type=text]  {
+	width: 35%;
+	padding: 8px;
+	margin: 1px 0;
+	margin-bottom: 0px;
+	/*display: inline-block;*/
+	position: absolute;
+    left: 470px;
+    top: 6934px;
+    
+} 
+input[type=submit]{
+    width: 35%;
+	padding: 8px;
+	margin: 1px 0;
+	margin-bottom: 0px;
+	/*display: inline-block;*/
+    position: absolute;
+    left: 470px;
+    top: 6974px;
+}
+  
+input[type=submit] {
+	margin-top: 5px;
+	background-color: #208c78;
+	color: white;
+	border: none;
+}
+  
+input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+.newsletter{
+    position: absolute;
+    left: 470px;
+    top: 6744px;
+
+}
+.img{
+    position: absolute;
+    left: 35px;
+    top: 6644px;
+}
