@@ -85,10 +85,10 @@ button:active {
                 <div class="col-md-6">
                     <div class="right-text">
                         <p>
-                            Transform your space into a haven of style and comfort with our exquisite selection of furniture. 
-                            From sleek modern designs to timeless classics, our curated collection offers something for every taste and lifestyle. 
-                            Elevate your home with quality craftsmanship and exceptional value.
-                            Discover the perfect pieces to express your unique aesthetic and make every room a masterpiece.
+                            Welcome to Cabalen! In here you can find one of the breathetaking tourist spots that you
+                            dont want to miss in your visit in pampanga. Let us help you look for exquisite cuisine,
+                            traditional culture, and upcoming events. We want you to have the experience of a lifetime,
+                            so come and book now for a tour in the breathetaking places in pampanga!
                         </p>
                     </div>
                 </div>
