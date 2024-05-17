@@ -24,6 +24,6 @@ if ($appointment_id > 0) {
 }
 
 // Redirect to the archive page
-header("Location: admin-dashboard.php");
+header("Location: admin-appointments.php");
 exit;
 ?>

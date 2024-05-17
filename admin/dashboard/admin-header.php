@@ -68,7 +68,7 @@
           <ul>
             <li><a href="admin-news.php" onclick="handleNavClick(event)" class="nav-links">News<News /a>
             </li>
-            <li><a href="admin-dashboard.php" onclick="handleNavClick(event)" class="nav-links">Appointments</a></li>
+            <li><a href="admin-appointments.php" onclick="handleNavClick(event)" class="nav-links">Appointments</a></li>
             <li><a href="admin-restos.php" onclick="handleNavClick(event)" class="nav-links">Restaurants</a></li>
 
             <button id="logout-btn" class="logout-btn btn btn btn-danger btn-lg d-flex justify-content-end">
