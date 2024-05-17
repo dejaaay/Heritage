@@ -81,35 +81,33 @@
     <section id="scroll">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 showcase-container">
+                <div class="col-md showcase-container">
                     <div class="card showcase-card">
-                        <img src="../img/2.png"
+                        <img src="../img/ParolPaint.jpg"
                             alt="image1" class="background" />
-                        <div class="card-content d-flex justify-content-center">
-                            <h2>Placeholder</h2>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, perspiciatis!</p>
-
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 showcase-container">
+                <div class="col-md showcase-container">
                     <div class="card showcase-card">
-                        <img src="../img/1.png"
+                        <img src="../img/PinatuboPortrait.png"
                             alt="image2" class="background" />
-                        <div class="card-content d-flex justify-content-center">
-                            <h2>Placeholder</h2>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, perspiciatis!</p>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 showcase-container">
+                <div class="col-md showcase-container">
                     <div class="card showcase-card">
-                        <img src="../img/3.png"
-                            alt="image3" class="background" />
-                        <div class="card-content d-flex justify-content-center">
-                            <h2>Placeholder</h2>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, perspiciatis!</p>
-
+                        <img src="../img/food.jpg"
+                            alt="image3" class="background " />
+                    </div>
+                </div>
+                <div class="col-md pt-1 showcase-container">
+                    <div class="row gy-4">
+                        <div class="card border-0 showcase-card-right">
+                            <img src="../img/dase.png"
+                            alt="image3" class="background rounded" />
+                        </div>
+                        <div class="card border-0 showcase-card-right">
+                            <img src="../img/clarkair.jpg"
+                            alt="image3" class="background rounded" />
                         </div>
                     </div>
                 </div>
