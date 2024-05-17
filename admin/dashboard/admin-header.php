@@ -40,7 +40,7 @@
         </div>
         <div class="nav-links-container">
           <ul>
-            <li><a href="create-news.php" onclick="handleNavClick(event)" class="nav-links">News<News /a>
+            <li><a href="admin-news.php" onclick="handleNavClick(event)" class="nav-links">News<News /a>
             </li>
             <li><a href="" onclick="handleNavClick(event)" class="nav-links">Appointments</a></li>
             <button><a class="nav-link" href="../login/logout.php">Logout</a></button>

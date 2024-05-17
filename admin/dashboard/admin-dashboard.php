@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+include "../../connect/connect.php";
 session_start();
 if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
