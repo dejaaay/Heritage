@@ -106,41 +106,40 @@
     <!-- about the page -->
     <!-- Content Section 1 -->
     <section id="scroll">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-1"><img class="img-fluid" src="../assets/img/HotAirBalloonClark01.jpg" alt="Cabalen Image 1" /></div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="p-1">
-                        <h2 class="display-4">Explore Pampanga</h2>
-                        <p class="txt">Pampanga is waving and is ready to welcome you open arms! Experience its rich culture, mouthwatering foods and exciting attractions and tourist destinations.
-                            Our website is designed for everyone who is looking forward to enrich themselves in all the facets of Pampanga. </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- Can change to a card with text or text that shows on hover -->
+
+                    <div class="card showcase-card">
+                        <img src="../img/2.png"
+                            alt="image1" class="background" />
+                        <div class="card-content">
+                            <h2>Placeholder</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <!-- Content Section 2 -->
-    <section>
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-6">
-                    <div class="p-1"><img class="img-fluid" src="../assets/img/LigliganParul01.jpg" alt="Cabalen Image 2" /></div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="p-1">
-                        <h1 class="display-4">Learn about the Culture</h1>
-                        <p class="txt">Not knowing where and what to eat? Our blog section will convince you why Pampanga is truly the Culinary Capital of the Philippines.
-                            There you will indulge a wide variety of dishes from their famous Sisig to their Paella. Exotic dishes will surely tickle your tastebuds from Betute, or deep fried stuffed frog, to their Kamaru, or mole crickets!
-                            Tara! Mangan Tamu!</p>
+                <div class="col-md-4">
+                    <div class="card showcase-card">
+                        <img src="../img/1.png"
+                            alt="image2" class="background" />
+                        <div class="card-content">
+                            <h2>Placeholder</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="col-md-4">
+                    <div class="card showcase-card">
+                        <img src="../img/3.png"
+                            alt="image3" class="background" />
+                        <div class="card-content">
+                            <h2>Placeholder</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>    
     </section>
+    <br>
     <br>
     <!--Video part-->
     <iframe class="center" width=100% height="900" src="https://www.youtube.com/embed/-3k-SC22zbA?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
