@@ -49,31 +49,32 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reset Password</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/reset_password.css">
 </head>
 
 <body>
 <div class="d-flex justify-content-start mt-3">
         <a href="admin-login.php" class="btn btn-secondary row-button">Back</a>
     </div>
-    <div class="container vh-100 d-flex justify-content-center align-items-center">
-        <div class="card p-4">
-            <h2 class="text-center mb-4">Reset Password</h2>
+    <div class="container vh-100 align-items-center d-flex justify-content-start mt-0">
+        <div class="wrapper">
+            <h2 class="title text-center m-0">Reset Password</h2>
             <?php if (isset($_GET['error'])) { ?>
                 <div class="alert alert-danger" role="alert">
                     <?php echo $_GET['error']; ?>
                 </div>
             <?php } ?>
             <form action="reset_password.php" method="POST">
-                <div class="mb-3">
+                <div class="mb-3 position-relative>
                     <label for="password" class="form-label">Enter your new password:</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 position-relative">
                     <label for="confirm_password" class="form-label">Confirm your new password:</label>
                     <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="row button m-0 d-flex align-items-center justify-content-center">
+                    <input type="submit" value="Submit" class="btn btn-primary">
                 </div>
             </form>
         </div>

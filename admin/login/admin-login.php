@@ -37,10 +37,10 @@ session_start();
                 <i class="fas fa-lock position-absolute" style="left: 10px; top: 50%; transform: translateY(-50%);"></i>
                 <input type="password" name="password" id="password" class="form-control ps-5" placeholder="Password" required>
                 </div>
-                <div class="row button mb-3">
+                <div class="row button m-0 d-flex align-items-center justify-content-center">
                     <input type="submit" value="Login" class="btn btn-primary">
                 </div>
-                <div class="text-center">
+                <div>
                     <a href="forgot_password.php">Forgot your password?</a>
                 </div>
             </form>
