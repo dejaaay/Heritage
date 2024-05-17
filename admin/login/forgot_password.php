@@ -49,7 +49,7 @@ if (isset($_POST['username']) && isset($_POST['answer1']) && isset($_POST['answe
     <div class="d-flex justify-content-start mt-3">
         <a href="admin-login.php" class="btn btn-secondary row-button">Back</a>
     </div>
-    <div class="container">
+    <div class="container mt-5">
         <div class="wrapper">
             <div class="title text-center"><span>Forgot Password</span></div>
             <form action="forgot_password.php" method="POST">
