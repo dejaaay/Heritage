@@ -141,11 +141,11 @@ include '../../connect/connect.php';
 
                                 // Add buttons for retrieve and delete actions
                                 echo "<td>";
-                               
+                                echo "<a href='update-news.php?updateid=" . $nws['news_id'] . "' class='btn btn-success m-2 text-light btnUpdate'>Update</a>";
                                 echo "</td>";
 
                                 echo "<td>";
-                                echo "<a href='update-news.php?updateid=" . $nws['news_id'] . "' class='btn btn-success m-2 text-light btnUpdate'>Update</a>";
+                               
                                 echo "<a href='delete-news.php?deleteid=" . $nws['news_id'] . "' class='btn btn-danger m-2 text-light btnArchive' onclick='return confirm(\"Are you sure you want to delete this news?\")'>Delete</a>";
                                 echo "</td>";
 

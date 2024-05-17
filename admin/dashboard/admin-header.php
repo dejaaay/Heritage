@@ -69,7 +69,7 @@
             <li><a href="admin-news.php" onclick="handleNavClick(event)" class="nav-links">News<News /a>
             </li>
             <li><a href="admin-dashboard.php" onclick="handleNavClick(event)" class="nav-links">Appointments</a></li>
-            <li><a href="" onclick="handleNavClick(event)" class="nav-links">Restaurants</a></li>
+            <li><a href="admin-restos.php" onclick="handleNavClick(event)" class="nav-links">Restaurants</a></li>
 
             <button id="logout-btn" class="logout-btn btn btn btn-danger btn-lg d-flex justify-content-end">
     <a style="color: white; text-decoration: none;" class="nav-link" href="../login/logout.php">Logout</a>
