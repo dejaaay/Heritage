@@ -73,7 +73,7 @@ include '../connect/connect.php';
             while ($row = mysqli_fetch_assoc($result_customer)) {
                 // Display events
                 echo '<div class="col-md-4 mb-4">';
-                echo '<div class="card shadow showevent" style="width: 100%; height: 400px;" data-news_name="' . $row['restos_name'] . '" data-news_description="' . $row['news_desc'] . '" data-news_date="' . date("F j, Y", strtotime($row['news_date'])) . '" data-news_time="' . date("g:i a", strtotime($row['news_time'])) . '" data-news_image="../admin/dashboard/' . $row['news_img'] . '">';
+                echo '<div class="card shadow showevent" style="width: 100%; height: 400px;" data-news_name="' . $row['restos_name'] . '" data-news_description="' . $row['restos_desc'] . '" data-news_date="' . date("F j, Y", strtotime($row['restos_oprtn'])) . '" data-news_time="' . date("g:i a", strtotime($row['restos_link'])) . '" data-news_image="../admin/dashboard/' . $row['restos_img'] . '">';
                 echo '<div class="card-header">';
                 echo '<h5 class="card-title">' . $row['restos_name'] . '</h5>';
                 echo '</div>';
@@ -86,7 +86,7 @@ include '../connect/connect.php';
                 $truncatedDescription = strlen($fullDescription) > 150 ? substr($fullDescription, 0, 150) . '...' : $fullDescription;
                 
                 echo '<div class="card-body">';
-                echo '<p class="card-text">' . date("F j, Y", strtotime($row['restos_date'])) . ' ' . date("g:i a", strtotime($row['restps_time'])) . '</p>';
+                echo '<p class="card-text">' . date("F j, Y", strtotime($row['restos_oprtn'])) . ' ' . date("g:i a", strtotime($row['restos_link'])) . '</p>';
                 echo '<p class="card-text">' . $truncatedDescription . '</p>'; // Display truncated description
                 echo '</div>';
                 echo '</div>';
