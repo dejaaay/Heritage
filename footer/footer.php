@@ -21,8 +21,7 @@
         <h3>About</h3>
         <ul class="location-container">
           <li class="location">
-            <a href="#" class="locationtxt">Heritage offers an exceptional experience of Pampanga 
-              <br>right from the comfort of your homes.</br></a>
+            <a href="#" class="locationtxt"><p>Here at Cabalen: Explore Pampanga! Our goal is to simply provide you with the best content possible about our hometown, Pampanga. What if you could visit and marvel the famous tourist destinations, scrumptious food and immerse yourself in Kapampangan culture? What was once a dream now made reality. “Malagu ka” or should we say, Welcome!.</p></a>
           </li>
         </ul>
       </div>
@@ -35,7 +34,7 @@
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/CabalenEP">
+              <a href="https://www.tiktok.com/@heritage.of.cabal?is_from_webapp=1&sender_device=pc">
                 <img src="../assets/img/SK_Ideograms-Tiktok.png" alt="TikTok" />
               </a>
             </li>

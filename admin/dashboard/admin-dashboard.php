@@ -29,7 +29,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['username'])) {
 
         <!-- Archive Event Management Section -->
         <div class="content-section">
-            <div class="header-container center-text">
+            <div class="header-container">
                 <h2>Appointments</h2>
             </div>
 

@@ -11,12 +11,18 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="css/blogs.css" rel="stylesheet">
-    <link href="css/arts_newsletter.css" rel="stylesheet">
-    <link href="css/gallery.css" rel="stylesheet">
+    <link href="blogs.css" rel="stylesheet">
+    <link href="../css/arts_newsletter.css" rel="stylesheet">
+    <link href="../css/gallery.css" rel="stylesheet">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/dejaaay/Cabelen/main/assets/img/Cabalen.png">
     <title>Kapampangan Culture Blog Page</title>
 </head>
+
+<style>
+  h1 {
+    margin-top: 150px;
+  }
+</style>
 
 <body>
 
@@ -172,10 +178,9 @@
             <div class="col-lg-12">
                 <br><br>
                 <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif"> Burarul </h2>
-                <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t1.18169-9/11041669_810420699007431_2106805964159778712_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9267fe&_nc_eui2=AeEIhP5t4uXnrXMeGSI4WDFtcZhLhTEyQOZxmEuFMTJA5imTFWHrNuFd5fAH22IRwuW1zi0rKXLpNcv9ZfyZxcpn&_nc_ohc=LchSLEvMfOwAX8QOXdR&_nc_ht=scontent.fmnl9-2.fna&oh=00_AfA5G9QO7F88h-KOZ4Dxbdo3WkLLY5-kwBtyn0weidRz9Q&oe=639FBAB2" alt="Burarul" class="center">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvSZgakYKypm0c1z9gdSJRNDeTGE3rs83PSIKEfFsfJpTuGkyzPRRdr0LKZIzwBEfNH64sW829KRvuHSUPAqtKyK6BE0oLXm6-SpDpwAgu2ef6mDe1_ob4NUsEOemaDnKvWyEXccDFAw/s1600/Burarul%252Cfinal.jpg" alt="Burarul" class="center">
                 <div class="container p-2">
                 </div>
-
                 <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" text-align: center font-size:60%;>
                     Burarul (kite) making is famous in Angeles City, Pampanga. Burarul does not only come in diamond or box shape. In fact, Mang Eloy of Angeles won for his kite creations, he made different varieties of kites like our national heroes, birds, fishes, angels and saints. Unfortunately, Mang Eloy took with him the art when he passed away.
                     In our time now, only a few know how to make basic kites.

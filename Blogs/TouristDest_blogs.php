@@ -11,9 +11,18 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="blogs.css" rel="stylesheet">
+  <link href="../css/tourists_newsletter.css" rel="stylesheet">
+  <link href="../css/gallery.css" rel="stylesheet">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/dejaaay/Cabelen/main/assets/img/Cabalen.png">
   <title> Tourist Spots Blog Page </title>
 </head>
+
+<style>
+  h1 {
+    margin-top: 150px;
+  }
+</style>
 
 <body>
   <?php include "../Navbar/header.php"; ?>

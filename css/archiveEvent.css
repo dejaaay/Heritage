@@ -33,9 +33,10 @@
 }
 
 /* Header container title styling */
-.header-container h2 {
-    margin-left: 20px;
+.header-container h2{
+    margin-left: 570px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Content section styling */
