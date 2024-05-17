@@ -52,6 +52,9 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
 </head>
 
 <body>
+<div class="d-flex justify-content-start mt-3">
+        <a href="admin-login.php" class="btn btn-secondary row-button">Back</a>
+    </div>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="card p-4">
             <h2 class="text-center mb-4">Reset Password</h2>
