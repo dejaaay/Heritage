@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['login_attempts'] = 0; // Reset login attempts on successful login
                     $_SESSION['consecutive_failed_attempts'] = 0; // Reset consecutive failed attempts
-                    header("Location: ../dashboard/admin-dashboard.php");
+                    header("Location: ../dashboard/admin-appointments.php");
                     exit();
                 } else {
                     // Invalid login credentials
