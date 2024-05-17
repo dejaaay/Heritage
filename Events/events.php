@@ -29,13 +29,13 @@ include '../connect/connect.php';
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../img/arayat.jpeg" alt="First slide">
+                        <img src="../img/morningsun.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/storeimg/2ndfloor1.jpg" alt="Second slide">
+                        <img src="../img/salakot.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/storeimg/Front1.jpg" alt="Third slide">
+                        <img src="../image/ai.jpg" alt="Third slide">
                     </div>
                 </div>
 
