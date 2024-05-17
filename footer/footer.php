@@ -34,7 +34,7 @@
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/CabalenEP">
+              <a href="https://www.tiktok.com/@heritage.of.cabal?is_from_webapp=1&sender_device=pc">
                 <img src="../assets/img/SK_Ideograms-Tiktok.png" alt="TikTok" />
               </a>
             </li>
