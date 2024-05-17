@@ -29,13 +29,13 @@ include '../connect/connect.php';
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../img/arayat.jpeg" alt="First slide">
+                        <img src="../img/morningsun.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/storeimg/2ndfloor1.jpg" alt="Second slide">
+                        <img src="../img/salakot.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img src="../assets/storeimg/Front1.jpg" alt="Third slide">
+                        <img src="../img/palmtree.jpg" alt="Third slide">
                     </div>
                 </div>
 
@@ -55,52 +55,47 @@ include '../connect/connect.php';
     <!-- Main content -->
     <div class="container">
         <!-- Page title -->
-        <h1 class="TitlePage">Street Kohi Events</h1>
+        <h1 class="TitlePage">Events</h1>
     </div>
 
     <!-- Divider -->
     <hr class="divider" />
 
-    <!-- Headings for sections -->
-    <div class="text-center mb-4">
-        <h2 class="Nameplate">Customer</h2>
-    </div>
+<!-- Events section -->
+<div class="events">
+    <div class="row">
+        <?php
+        // Query for events
+        $sql_customer = "SELECT * FROM `news`";
+        $result_customer = mysqli_query($con, $sql_customer);
 
-    <!-- Events section for Customers -->
-    <div class="events">
-        <div class="row">
-            <?php
-            // Query for Customer events
-            $sql_customer = "SELECT * FROM `news`";
-            $result_customer = mysqli_query($con, $sql_customer);
-
-            if ($result_customer && mysqli_num_rows($result_customer) > 0) {
-                while ($row = mysqli_fetch_assoc($result_customer)) {
-                    // Display Customer events
-                    echo '<div class="col-md-4 mb-4">';
-                    echo '<div class="card shadow showevent" style="width: 100%;" data-news_name="' . $row['news_name'] . '" data-news_description="' . $row['news_desc'] . '" data-news_date="' . date("F j, Y", strtotime($row['news_date'])) . '" data-news_time="' . date("g:i a", strtotime($row['news_time'])) . '" data-news_image="../admin/dashboard/' . $row['news_img'] . '">';
-                    echo '<div class="card-header">';
-                    echo '<h5 class="card-title">' . $row['news_name'] . '</h5>';
-                    echo '</div>';
-                    echo '<div class="img-container" style="height: 200px; overflow: hidden;">';
-                    echo '<img class="card-img-top" src="../admin/dashboard/' . $row['news_img'] . '" alt="news image" style="object-fit: cover; height: 100%;">';
-                    echo '</div>';
-                    
-                    // Truncate the news description to a specific length (e.g., 150 characters)
-                    $fullDescription = $row['news_desc'];
-                    $truncatedDescription = strlen($fullDescription) > 150 ? substr($fullDescription, 0, 150) . '...' : $fullDescription;
-                    
-                    echo '<div class="card-body">';
-                    echo '<p class="card-text">' . date("F j, Y", strtotime($row['news_date'])) . ' ' . date("g:i a", strtotime($row['news_time'])) . '</p>';
-                    echo '<p class="card-text">' . $truncatedDescription . '</p>'; // Display truncated description
-                    echo '</div>';
-                    echo '</div>';
-                    echo '</div>';
-                }
+        if ($result_customer && mysqli_num_rows($result_customer) > 0) {
+            while ($row = mysqli_fetch_assoc($result_customer)) {
+                // Display events
+                echo '<div class="col-md-4 mb-4">';
+                echo '<div class="card shadow showevent" style="width: 100%; height: 400px;" data-news_name="' . $row['news_name'] . '" data-news_description="' . $row['news_desc'] . '" data-news_date="' . date("F j, Y", strtotime($row['news_date'])) . '" data-news_time="' . date("g:i a", strtotime($row['news_time'])) . '" data-news_image="../admin/dashboard/' . $row['news_img'] . '">';
+                echo '<div class="card-header">';
+                echo '<h5 class="card-title">' . $row['news_name'] . '</h5>';
+                echo '</div>';
+                echo '<div class="img-container" style="height: 200px; overflow: hidden;">';
+                echo '<img class="card-img-top custom-card-image" src="../admin/dashboard/' . $row['news_img'] . '" alt="news image">';
+                echo '</div>';
+                
+                // Truncate the news description to a specific length (e.g., 150 characters)
+                $fullDescription = $row['news_desc'];
+                $truncatedDescription = strlen($fullDescription) > 150 ? substr($fullDescription, 0, 150) . '...' : $fullDescription;
+                
+                echo '<div class="card-body">';
+                echo '<p class="card-text">' . date("F j, Y", strtotime($row['news_date'])) . ' ' . date("g:i a", strtotime($row['news_time'])) . '</p>';
+                echo '<p class="card-text">' . $truncatedDescription . '</p>'; // Display truncated description
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
             }
-            ?>
-        </div>
+        }
+        ?>
     </div>
+</div>
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -111,15 +106,13 @@ include '../connect/connect.php';
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="card" style="width:
- 100%;">
+                    <div class="card" style="width:100%;">
                         <img src="..." class="card-img-top" alt="..." id="img-src">
                         <div class="card-body">
                             <h5 class="card-title" id="date-time"></h5>
                             <p class="card-text" id="desc"></p>
                             <p class="card-text" id="price"></p>
                             <p class="card-text" id="venue"></p>
-                            <a href="event-register.php" class="btn btn-primary" id="link">Open Link</a>
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@
         <h3>About</h3>
         <ul class="location-container">
           <li class="location">
-            <a href="#" class="locationtxt"><p>Here at Cabalen: Explore Pampanga! Our goal is to simply provide you with the best content possible about our hometown, Pampanga. What if you could visit and marvel the famous tourist destinations, scrumptious food and immerse yourself in Kapampangan culture? What was once a dream now made reality. “Malagu ka” or should we say, Welcome!.</p></a>
+            <a href="#" class="locationtxt"><p>Here at Cabalen: Explore Pampanga! Our goal is to simply provide you with the best content possible about our hometown, Pampanga. What if you could visit and marvel the famous tourist destinations, scrumptious food and immerse yourself in Kapampangan culture? What was once a dream now made reality. “Malagu ka” or should we say, Welcome!</p></a>
           </li>
         </ul>
       </div>

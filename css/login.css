@@ -14,14 +14,15 @@ body{
   background: rgba(176, 166, 149, .3);
 }
 .container{
-  max-width: 440px;
+  max-width: 600px;
+  height: auto;
   padding: 0 20px;
   margin: 170px auto;
 }
 .wrapper{
   width: 100%;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
 }
 .wrapper .title{
@@ -158,3 +159,42 @@ form .button input:hover{
   font-size: 1.2em;
   color: #776B5D;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    padding: 10px; /* Decrease padding for smaller screens */
+  }
+
+  .wrapper .title {
+    height: 50px; /* Decrease title height for smaller screens */
+    font-size: 20px; /* Decrease title font size for smaller screens */
+  }
+
+  .wrapper form {
+    padding: 10px; /* Decrease padding for smaller screens */
+  }
+
+  .wrapper form .row {
+    height: 35px; /* Decrease input height for smaller screens */
+    margin-bottom: 5px; /* Decrease margin between rows for smaller screens */
+  }
+
+  .wrapper form .row input {
+    padding-left: 40px; /* Decrease left padding for smaller screens */
+  }
+
+  .password-checkbox {
+    margin-bottom: 10px; /* Decrease margin for checkbox section for smaller screens */
+  }
+
+  .toggle-password {
+    top: 1.25rem; /* Adjust top position for toggle password button for smaller screens */
+  }
+}
+
+
