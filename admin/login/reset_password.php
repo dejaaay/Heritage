@@ -22,8 +22,9 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
         header("Location: reset_password.php?error=Passwords do not match");
         exit();
     } else {
-        // Update the user's password in the database
-        $sql = "UPDATE admin SET password='$password' WHERE username='$username'";
+        // Hash the new password before storing it in the database
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "UPDATE admin SET password='$hashed_password' WHERE username='$username'";
         if (mysqli_query($con, $sql)) {
             // Unset the reset_user session variable
             unset($_SESSION['reset_user']);
@@ -40,8 +41,6 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
 }
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,6 +52,9 @@ if (isset($_SESSION['reset_user']) && isset($_POST['password']) && isset($_POST[
 </head>
 
 <body>
+<div class="d-flex justify-content-start mt-3">
+        <a href="admin-login.php" class="btn btn-secondary row-button">Back</a>
+    </div>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
         <div class="card p-4">
             <h2 class="text-center mb-4">Reset Password</h2>

@@ -40,38 +40,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Execute SQL query to check if the user exists
-        $sql = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+        $sql = "SELECT * FROM admin WHERE username='$username'";
         $result = mysqli_query($con, $sql);
 
         if ($result) {
             // Check if exactly one row was returned
             if (mysqli_num_rows($result) === 1) {
                 $row = mysqli_fetch_assoc($result);
-                // Store user data in session variables
-                $_SESSION['username'] = $row['username'];
-                $_SESSION['id'] = $row['id'];
-                $_SESSION['login_attempts'] = 0; // Reset login attempts on successful login
-                $_SESSION['consecutive_failed_attempts'] = 0; // Reset consecutive failed attempts
-                header("Location: ../dashboard/admin-dashboard.php");
-                exit();
-            } else {
-                // Invalid login credentials
-                $_SESSION['login_attempts'] += 1;
-                $_SESSION['consecutive_failed_attempts'] += 1;
 
-                if ($_SESSION['login_attempts'] >= 3) {
-                    // Calculate blocking duration dynamically
-                    $block_duration = 30 * ceil($_SESSION['consecutive_failed_attempts'] / 3);
-                    $_SESSION['blocked_until'] = time() + $block_duration;
-                    $_SESSION['login_attempts'] = 0; // Reset login attempts
-                    header("Location: admin-login.php?error=You are temporarily blocked. Please try again in $block_duration seconds.");
-                    exit;
+                // Verify the entered password against the stored hashed password
+                if (password_verify($password, $row['password'])) {
+                    // Store user data in session variables
+                    $_SESSION['username'] = $row['username'];
+                    $_SESSION['id'] = $row['id'];
+                    $_SESSION['login_attempts'] = 0; // Reset login attempts on successful login
+                    $_SESSION['consecutive_failed_attempts'] = 0; // Reset consecutive failed attempts
+                    header("Location: ../dashboard/admin-dashboard.php");
+                    exit();
                 } else {
-                    // Provide error message with remaining attempts
-                    $remaining_attempts = 3 - $_SESSION['login_attempts'];
-                    header("Location: admin-login.php?error=Incorrect username or password. You have $remaining_attempts attempts remaining.");
-                    exit;
+                    // Invalid login credentials
+                    $_SESSION['login_attempts'] += 1;
+                    $_SESSION['consecutive_failed_attempts'] += 1;
+
+                    if ($_SESSION['login_attempts'] >= 3) {
+                        // Calculate blocking duration dynamically
+                        $block_duration = 30 * ceil($_SESSION['consecutive_failed_attempts'] / 3);
+                        $_SESSION['blocked_until'] = time() + $block_duration;
+                        $_SESSION['login_attempts'] = 0; // Reset login attempts
+                        header("Location: admin-login.php?error=You are temporarily blocked. Please try again in $block_duration seconds.");
+                        exit;
+                    } else {
+                        // Provide error message with remaining attempts
+                        $remaining_attempts = 3 - $_SESSION['login_attempts'];
+                        header("Location: admin-login.php?error=Incorrect username or password. You have $remaining_attempts attempts remaining.");
+                        exit();
+                    }
                 }
+            } else {
+                header("Location: admin-login.php?error=Incorrect username or password");
+                exit();
             }
         } else {
             header("Location: admin-login.php?error=Query failed");

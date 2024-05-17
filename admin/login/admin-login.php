@@ -28,22 +28,21 @@ session_start();
                 <p class="alert alert-success text-center"><?php echo $_GET['success']; ?></p>
             <?php } ?>
 
-            <form action="login.php" method="POST"> <!-- Specify method as POST -->
-                <div class="row">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="username" id="username" placeholder="Username">
+            <form action="login.php" method="POST">
+                <div class="mb-3 position-relative">
+                <i class="fas fa-user position-absolute" style="left: 10px; top: 50%; transform: translateY(-50%);"></i>
+                <input type="text" name="username" id="username" class="form-control ps-5" placeholder="Username">
                 </div>
-                <div class="row password-container">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                    <span class="toggle-password" onclick="togglePasswordVisibility()">
-                        <i id="eyeIcon" class="fas fa-eye" id="toggleEye"></i>
-                    </span>
+                <div class="mb-3 position-relative">
+                <i class="fas fa-lock position-absolute" style="left: 10px; top: 50%; transform: translateY(-50%);"></i>
+                <input type="password" name="password" id="password" class="form-control ps-5" placeholder="Password" required>
                 </div>
-                <div class="row button">
-                    <input type="submit" value="Login">
+                <div class="row button mb-3">
+                    <input type="submit" value="Login" class="btn btn-primary">
                 </div>
-                <a href="forgot_password.php">Forgot your password?</a>
+                <div class="text-center">
+                    <a href="forgot_password.php">Forgot your password?</a>
+                </div>
             </form>
 
         </div>
@@ -52,15 +51,10 @@ session_start();
     <script>
         function togglePasswordVisibility() {
             const passwordInput = document.getElementById('password');
-            const toggleEye = document.getElementById('toggleEye');
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
-                toggleEye.classList.remove('fa-eye');
-                toggleEye.classList.add('fa-eye-slash');
             } else {
                 passwordInput.type = 'password';
-                toggleEye.classList.remove('fa-eye-slash');
-                toggleEye.classList.add('fa-eye');
             }
         }
     </script>
