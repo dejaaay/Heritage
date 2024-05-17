@@ -35,7 +35,7 @@ include '../connect/connect.php';
                         <img src="../img/salakot.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img src="../image/ai.jpg" alt="Third slide">
+                        <img src="../img/palmtree.jpg" alt="Third slide">
                     </div>
                 </div>
 
@@ -61,41 +61,41 @@ include '../connect/connect.php';
     <!-- Divider -->
     <hr class="divider" />
 
-    <!-- Events section -->
-    <div class="events">
-        <div class="row">
-            <?php
-            // Query for events
-            $sql_customer = "SELECT * FROM `news`";
-            $result_customer = mysqli_query($con, $sql_customer);
+<!-- Events section -->
+<div class="events">
+    <div class="row">
+        <?php
+        // Query for events
+        $sql_customer = "SELECT * FROM `news`";
+        $result_customer = mysqli_query($con, $sql_customer);
 
-            if ($result_customer && mysqli_num_rows($result_customer) > 0) {
-                while ($row = mysqli_fetch_assoc($result_customer)) {
-                    // Display events
-                    echo '<div class="col-md-4 mb-4">';
-                    echo '<div class="card shadow showevent" style="width: 100%;" data-news_name="' . $row['news_name'] . '" data-news_description="' . $row['news_desc'] . '" data-news_date="' . date("F j, Y", strtotime($row['news_date'])) . '" data-news_time="' . date("g:i a", strtotime($row['news_time'])) . '" data-news_image="../admin/dashboard/' . $row['news_img'] . '">';
-                    echo '<div class="card-header">';
-                    echo '<h5 class="card-title">' . $row['news_name'] . '</h5>';
-                    echo '</div>';
-                    echo '<div class="img-container" style="height: 200px; overflow: hidden;">';
-                    echo '<img class="card-img-top" src="../admin/dashboard/' . $row['news_img'] . '" alt="news image" style="object-fit: cover; height: 100%;">';
-                    echo '</div>';
-                    
-                    // Truncate the news description to a specific length (e.g., 150 characters)
-                    $fullDescription = $row['news_desc'];
-                    $truncatedDescription = strlen($fullDescription) > 150 ? substr($fullDescription, 0, 150) . '...' : $fullDescription;
-                    
-                    echo '<div class="card-body">';
-                    echo '<p class="card-text">' . date("F j, Y", strtotime($row['news_date'])) . ' ' . date("g:i a", strtotime($row['news_time'])) . '</p>';
-                    echo '<p class="card-text">' . $truncatedDescription . '</p>'; // Display truncated description
-                    echo '</div>';
-                    echo '</div>';
-                    echo '</div>';
-                }
+        if ($result_customer && mysqli_num_rows($result_customer) > 0) {
+            while ($row = mysqli_fetch_assoc($result_customer)) {
+                // Display events
+                echo '<div class="col-md-4 mb-4">';
+                echo '<div class="card shadow showevent" style="width: 100%; height: 400px;" data-news_name="' . $row['news_name'] . '" data-news_description="' . $row['news_desc'] . '" data-news_date="' . date("F j, Y", strtotime($row['news_date'])) . '" data-news_time="' . date("g:i a", strtotime($row['news_time'])) . '" data-news_image="../admin/dashboard/' . $row['news_img'] . '">';
+                echo '<div class="card-header">';
+                echo '<h5 class="card-title">' . $row['news_name'] . '</h5>';
+                echo '</div>';
+                echo '<div class="img-container" style="height: 200px; overflow: hidden;">';
+                echo '<img class="card-img-top custom-card-image" src="../admin/dashboard/' . $row['news_img'] . '" alt="news image">';
+                echo '</div>';
+                
+                // Truncate the news description to a specific length (e.g., 150 characters)
+                $fullDescription = $row['news_desc'];
+                $truncatedDescription = strlen($fullDescription) > 150 ? substr($fullDescription, 0, 150) . '...' : $fullDescription;
+                
+                echo '<div class="card-body">';
+                echo '<p class="card-text">' . date("F j, Y", strtotime($row['news_date'])) . ' ' . date("g:i a", strtotime($row['news_time'])) . '</p>';
+                echo '<p class="card-text">' . $truncatedDescription . '</p>'; // Display truncated description
+                echo '</div>';
+                echo '</div>';
+                echo '</div>';
             }
-            ?>
-        </div>
+        }
+        ?>
     </div>
+</div>
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -106,15 +106,13 @@ include '../connect/connect.php';
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="card" style="width:
- 100%;">
+                    <div class="card" style="width:100%;">
                         <img src="..." class="card-img-top" alt="..." id="img-src">
                         <div class="card-body">
                             <h5 class="card-title" id="date-time"></h5>
                             <p class="card-text" id="desc"></p>
                             <p class="card-text" id="price"></p>
                             <p class="card-text" id="venue"></p>
-                            <a href="event-register.php" class="btn btn-primary" id="link">Open Link</a>
                         </div>
                     </div>
                 </div>
