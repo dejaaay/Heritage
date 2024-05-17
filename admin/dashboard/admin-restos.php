@@ -76,7 +76,7 @@ include '../../connect/connect.php';
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>News List</title>
+    <title>Restaurant List</title>
     <link rel="icon" type="image/x-icon" href="../../assets/images/SK-Icon.png">
 </head>
 <body>
@@ -91,7 +91,7 @@ include '../../connect/connect.php';
     <h2>Manage News</h2>
     <div class="btn-container">
         <!-- Add Event Button -->
-        <a href="create-news.php?" class="btn btn-primary">Add News</a>
+        <a href="create-restos.php?" class="btn btn-primary">Add Restos </a>
     </div>
 </div>
 
@@ -102,8 +102,8 @@ include '../../connect/connect.php';
                             <th>ID</th>
                             <th>Name</th>
                             <th>Description</th>
-                            <th>Date</th>
-                            <th>Time</th>
+                            <th>Operation Hour</th>
+                            <th>Link</th>
                             <th>Image</th>
                             <th>Actions</th>
                         </tr>
@@ -114,7 +114,7 @@ include '../../connect/connect.php';
                         include('../../connect/connect.php');
 
                         // Prepare the fetch query for archive_event table
-                        $stmt_fetch = mysqli_prepare($con, "SELECT * FROM `news`");
+                        $stmt_fetch = mysqli_prepare($con, "SELECT * FROM `restos`");
 
                         // Execute the fetch query
                         mysqli_stmt_execute($stmt_fetch);
@@ -131,26 +131,26 @@ include '../../connect/connect.php';
                             foreach ($news as $nws) {
 
                                 echo '<tr>';
-                                echo '<td>' . htmlspecialchars($nws['news_id']) . '</td>';
-                                echo '<td>' . htmlspecialchars($nws['news_name']) . '</td>';
-                                echo '<td>' . htmlspecialchars($nws['news_desc']) . '</td>';
-                                echo '<td>' . htmlspecialchars($nws['news_date']) . '</td>';
-                                echo '<td>' . htmlspecialchars($nws['news_time']) . '</td>';
-                                echo "<td><img src='" . htmlspecialchars($nws['news_img']) . "' alt='News Image' class='coffee-image'></td>";
+                                echo '<td>' . htmlspecialchars($nws['restos_id']) . '</td>';
+                                echo '<td>' . htmlspecialchars($nws['restos_name']) . '</td>';
+                                echo '<td>' . htmlspecialchars($nws['restos_desc']) . '</td>';
+                                echo '<td>' . htmlspecialchars($nws['restos_oprtn']) . '</td>';
+                                echo '<td>' . htmlspecialchars($nws['restos_link']) . '</td>';
+                                echo "<td><img src='" . htmlspecialchars($nws['restos_img']) . "' alt='restos Image' class='coffee-image'></td>";
 
 
                                 // Add buttons for retrieve and delete actions
                                 echo "<td>";
-                               
+
                                 echo "</td>";
 
                                 echo "<td>";
-                                echo "<a href='update-news.php?updateid=" . $nws['news_id'] . "' class='btn btn-success m-2 text-light btnUpdate'>Update</a>";
-                                echo "<a href='delete-news.php?deleteid=" . $nws['news_id'] . "' class='btn btn-danger m-2 text-light btnArchive' onclick='return confirm(\"Are you sure you want to delete this news?\")'>Delete</a>";
+                                echo "<a href='update-news.php?updateid=" . $nws['restos_id'] . "' class='btn btn-success m-2 text-light btnUpdate'>Update</a>";
+                                echo "<a href='delete-news.php?deleteid=" . $nws['restos_id'] . "' class='btn btn-danger m-2 text-light btnArchive' onclick='return confirm(\"Are you sure you want to delete this resto?\")'>Delete</a>";
                                 echo "</td>";
 
                                 // Button to delete the archive event
-                                
+
         }
     } else {
         echo '<tr><td colspan="10" class="text-center">No News found</td></tr>';
@@ -159,18 +159,6 @@ include '../../connect/connect.php';
     </tbody>
 </table>
 <script>
-// Function to handle pagination link click for all tables
-function handlePaginationClick(news) {
-    var clickedHref = news.target.href;
-    var tableType = news.target.classList.contains('page-coffee') ? 'Coffee' :
-                    news.target.classList.contains('page-furniture') ? 'Furniture' :
-                    news.target.classList.contains('page-news') ? 'Events' : null;
-    if (tableType) {
-        sessionStorage.setItem("active" + tableType + "Link", clickedHref);
-        setActiveLink(tableType, clickedHref);
-    }
-}
-
 // Function to set the "active" class on the correct pagination link
 function setActiveLink(tableType, clickedHref) {
     var paginationLinks = document.querySelectorAll(".page-" + tableType.toLowerCase());
