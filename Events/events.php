@@ -55,28 +55,23 @@ include '../connect/connect.php';
     <!-- Main content -->
     <div class="container">
         <!-- Page title -->
-        <h1 class="TitlePage">Street Kohi Events</h1>
+        <h1 class="TitlePage">Events</h1>
     </div>
 
     <!-- Divider -->
     <hr class="divider" />
 
-    <!-- Headings for sections -->
-    <div class="text-center mb-4">
-        <h2 class="Nameplate">Customer</h2>
-    </div>
-
-    <!-- Events section for Customers -->
+    <!-- Events section -->
     <div class="events">
         <div class="row">
             <?php
-            // Query for Customer events
+            // Query for events
             $sql_customer = "SELECT * FROM `news`";
             $result_customer = mysqli_query($con, $sql_customer);
 
             if ($result_customer && mysqli_num_rows($result_customer) > 0) {
                 while ($row = mysqli_fetch_assoc($result_customer)) {
-                    // Display Customer events
+                    // Display events
                     echo '<div class="col-md-4 mb-4">';
                     echo '<div class="card shadow showevent" style="width: 100%;" data-news_name="' . $row['news_name'] . '" data-news_description="' . $row['news_desc'] . '" data-news_date="' . date("F j, Y", strtotime($row['news_date'])) . '" data-news_time="' . date("g:i a", strtotime($row['news_time'])) . '" data-news_image="../admin/dashboard/' . $row['news_img'] . '">';
                     echo '<div class="card-header">';
