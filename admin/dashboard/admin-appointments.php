@@ -2,6 +2,13 @@
 session_start();
 include '../../connect/connect.php';
 
+session_start();
+
+if (!isset($_SESSION['username']) || !isset($_SESSION['id'])) {
+    header("Location: ../login/admin-login.php");
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>

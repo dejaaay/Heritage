@@ -7,6 +7,12 @@ if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+// login first
+if (!isset($_SESSION['username']) || !isset($_SESSION['id'])) {
+    header("Location: ../login/admin-login.php");
+    exit();
+}
+
 // Redirect to login page if user is not authenticated
 // if (!isset($_SESSION['admin_user'])) {
 //     header("Location: ../../login/login.php");

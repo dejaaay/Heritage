@@ -2,68 +2,12 @@
 session_start();
 include '../../connect/connect.php';
 
-// if (!isset($_SESSION['admin_user'])) {
-//     header("Location: ../../login/login.php");
-//     exit;
-// }
+session_start();
 
-// // Function to sanitize user input
-// function sanitizeInput($input) {
-//     global $con;
-//     return mysqli_real_escape_string($con, $input);
-// }
-
-// // // Pagination settings
-// // $items_per_page = 5;
-// // $page_coffee = isset($_GET['page_coffee']) ? (int)$_GET['page_coffee'] : 1;
-// // $page_furniture = isset($_GET['page_furniture']) ? (int)$_GET['page_furniture'] : 1;
-// // $page_event = isset($_GET['page_event']) ? (int)$_GET['page_event'] : 1;
-
-// // $offset_coffee = ($page_coffee - 1) * $items_per_page;
-// // $offset_furniture = ($page_furniture - 1) * $items_per_page;
-// // $offset_event = ($page_event - 1) * $items_per_page;
-
-// // // Calculate total number of coffee items
-// // $sql_total_coffee = "SELECT COUNT(*) FROM coffee";
-// // $result_total_coffee = mysqli_query($con, $sql_total_coffee);
-// // $total_items_coffee = mysqli_fetch_row($result_total_coffee)[0];
-// // $total_pages_coffee = ceil($total_items_coffee / $items_per_page);
-
-// // If a coffee item is added, adjust the page number accordingly
-// if (isset($_GET['coffee_added'])) {
-//     $page_coffee = 1; // Set page to the first page
-//     $_SESSION['current_page_coffee'] = $page_coffee; // Reset the session variable
-//     // Set active link in session storage
-//     $_SESSION['active_link'] = "page_coffee";
-// }
-
-// // // Calculate total number of furniture items
-// // $sql_total_furniture = "SELECT COUNT(*) FROM furniture";
-// // $result_total_furniture = mysqli_query($con, $sql_total_furniture);
-// // $total_items_furniture = mysqli_fetch_row($result_total_furniture)[0];
-// // $total_pages_furniture = ceil($total_items_furniture / $items_per_page);
-
-// // If a furniture item is added, adjust the page number accordingly
-// if (isset($_GET['furniture_added'])) {
-//     $page_furniture = 1; // Set page to the first page
-//     $_SESSION['current_page_furniture'] = $page_furniture; // Reset the session variable
-//     // Set active link in session storage
-//     $_SESSION['active_link'] = "page_furniture";
-// }
-
-// // Calculate total number of news items
-// $sql_total_event = "SELECT COUNT(*) FROM news";
-// $result_total_event = mysqli_query($con, $sql_total_event);
-// $total_items_event = mysqli_fetch_row($result_total_event)[0];
-// $total_pages_event = ceil($total_items_event / $items_per_page);
-
-// // // If an event item is added, adjust the page number accordingly
-// // if (isset($_GET['event_added'])) {
-// //     $page_event = 1; // Set page to the first page
-// //     $_SESSION['current_page_event'] = $page_event; // Reset the session variable
-// //     // Set active link in session storage
-// //     $_SESSION['active_link'] = "page_event";
-// // }
+if (!isset($_SESSION['username']) || !isset($_SESSION['id'])) {
+    header("Location: ../login/admin-login.php");
+    exit();
+}
 
 ?>
 

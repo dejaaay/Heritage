@@ -3,10 +3,10 @@ session_start();
 include '../../connect/connect.php';
 
 // Check if user is authenticated
-// if (!isset($_SESSION['admin_user'])) {
-//     header("Location: ../../login/login.php");
-//     exit;
-// }
+if (!isset($_SESSION['username']) || !isset($_SESSION['id'])) {
+    header("Location: ../login/admin-login.php");
+    exit();
+}
 
 // Handle the update request
 if (isset($_GET['updateid'])) {
