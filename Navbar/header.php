@@ -41,7 +41,7 @@
         <div class="nav-links-container">
           <ul>
             <li><a href="../LandingPage/LandingPage.php" onclick="handleNavClick(event)" class="nav-links">Home</a></li>
-            <li><a href="../Blogs/gallery.php" onclick="handleNavClick(event)" class="nav-links">Blogs</a></li>
+            <li><a href="../Blogs/gallery.php" onclick="handleNavClick(event)" class="nav-links">Gallery</a></li>
             <li><a href="../Blogs/CultArts_blogs.php" onclick="handleNavClick(event)" class="nav-links">Culture</a></li>
             <li><a href="../Blogs/Food_blogs.php" onclick="handleNavClick(event)" class="nav-links">Food</a></li>
             <li><a href="../Restos/restos.php" onclick="handleNavClick(event)" class="nav-links">Restaurants</a></li>
